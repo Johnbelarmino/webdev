@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+      <h1 id="textLabel">Simple HTML / CSS / JS Calculator</h1>
+
+     <div id="main">
+       <div id="input">Your input</div>
+        <form name="output">
+           <input name="textView" class="textView">
+        </form>
+       <table>
+          <tr>
+            <td class="button"><input type="button" class="number" onclick="clean();" value="C"></td>
+            <td class="button"><input type="button" class="number" value=""></td>
+            <td class="button"><input type="button" class="number" value=""></td>
+            <td class="button"><input type="button" class="operations" onclick="insert(' / ')" value="÷"></td>
+          </tr>
+         <tr>
+            <td class="button"><input type="button" class="number" onclick="insert(7 )" value="7"></td>
+            <td class="button"><input type="button" class="number" onclick="insert(8 )" value="8"></td>
+            <td class="button"><input type="button" class="number" onclick="insert(9 )" value="9"></td>
+            <td class="button"><input type="button" class="operations" onclick="insert(' * ')" value="*"></td>
+          </tr>
+          <tr>
+            <td class="button"><input type="button" class="number" onclick="insert(4 )" value="4"></td>
+            <td class="button"><input type="button" class="number" onclick="insert(5 )" value="5"></td>
+            <td class="button"><input type="button" class="number" onclick="insert(6 )" value="6"></td>
+            <td class="button"><input type="button" class="operations" onclick="insert(' - ')" value="-"></td>
+          </tr>
+          <tr>
+            <td class="button"><input type="button" class="number" onclick="insert(1 )" value="1"></td>
+            <td class="button"><input type="button" class="number" onclick="insert(2 )" value="2"></td>
+            <td class="button"><input type="button" class="number" onclick="insert(3 )" value="3"></td>
+            <td class="button"><input type="button" class="operations" onclick="insert(' + ')" value="+"></td>
+          </tr>
+          </table>
+
+          <table>
+           <tr>
+              <td class="button"><input type="button" class="zero" onclick="insert(0)" value="0"></td>
+              <td class="button"><input type="button" class="number" onclick="insert('.')" value="."></td>
+              <td class="button"><input type="button" class="operations" onclick="equals();" value="="></td>
+          </tr>
+       </table>
+       <footer>
+         <p>Samuel Belarmino January 1st, 2019</p>
+       </footer>
+     </div>
+   </body>
+</html>

@@ -1,0 +1,68 @@
+html {
+  background: linear-gradient(to right,#29a3a3,#ccfff5);
+}
+
+.number {
+   width: 75px;
+   height: 75px;
+   background-color: #e6fffa;
+   font-size: 25px;
+   color: #006652;
+}
+.button {
+   margin: 5px;
+   padding: 2px;
+}
+
+.zero {
+   width: 155px;
+   height: 75px;
+   background-color: #e6fffa;
+   font-size: 25px;
+   color: #006652;
+}
+
+.operations {
+   width: 75px;
+   height: 75px;
+   background-color: #ff0066;
+   font-size: 25px;
+   color: white;
+}
+.textView{
+   margin: 2px;
+   height: 75px;
+   width: 315px;
+
+   border-width: 1px;
+   font-size:60px;
+   text-align:right;
+   color: #006652;
+   background: white;
+}
+
+#input {
+  width: 310px;
+  text-align: right;
+  color: #e6fffa;
+}
+
+#main{
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+
+.button:hover{
+  background-color: white;
+}
+h1{
+  text-align: center;
+  color: white;
+  text-size: 10px;
+}
+
+footer p{
+  text-align: right;
+  color: white;
+}
