@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weight Converter</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="top">
+		<p id="title"> Weight Converter </p>
+		<p id="author"> Samuel Belarmino </p>
+	</div>
+	<div class="middle">
+		<input class="lbs" id="lbsInput" type="text" placeholder="Enter a weight">
+			<select id="selector" class ="selector">
+				<option> lbs </option>
+				<option> kg </option>
+				<option> grams </option>
+				<option> ounces </option>
+			</select> 
+		</input>
+		<!-- 3 Separate Divs for the 3 conversions -->
+		<div class="conversions">
+			<div id="kg" class="kg">
+				<p id="kgLabel"> Kilograms </p>
+				<div id="kgOutput">0</div>
+			</div>
+			<div id="grams" class="grams">
+				<p id="gramsLabel"> Grams </p>
+				<div id="gramsOutput">0</div>
+			</div>
+			<div id="ounces" class="ounces">
+				<p id="ouncesLabel"> Ounces </p>
+				<div id="ouncesOutput">0</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

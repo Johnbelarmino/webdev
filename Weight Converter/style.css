@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #262626;
+}
+
+.top {
+	text-align: center;
+	margin-top: 100px;
+}
+
+#title {
+	color: white;
+	font-family: "HelveticaNeue-Light";
+	font-size: 60px;
+}
+
+#author {
+	color: white;
+	font-size: 15px;
+	font-family: cursive;
+}
+
+.middle {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.lbs {
+	width: 200px;
+	font-size: 30px;
+	padding: 10px 15px 10px 15px;
+	box-shadow: 0px 15px 50px 0px black;
+	border: none;
+	font-family: "HelveticaNeue-Light";
+	cursor: text;
+}
+
+.selector {
+	color: white;
+	font-family: "HelveticaNeue-Light";
+	font-size: 30px;
+	background-color: transparent;
+	margin-left: 10px;
+	padding: 15px;
+}
+
+.kg, .grams, .ounces{
+	font-family: "HelveticaNeue-Light";
+	font-size: 20px;
+	color: white;
+	width: 400px;
+	height: 50px;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px black;
+	padding: 0px 10px 20px 10px;
+	margin: 15px auto 15px auto;
+}
+
+#kg p, #ounces p, #grams p{
+	padding: 5px 0px;
+}
+
+#kgOutput{
+	font-family: "HelveticaNeue";
+	font-size: 20px;
+	color: #00664e;
+	padding: 5px 20px;
+}
+
+#ouncesOutput {
+	font-family: "HelveticaNeue";
+	font-size: 20px;
+	color: #8080ff;
+	padding: 5px 20px;
+}
+
+#gramsOutput {
+	font-family: "HelveticaNeue";
+	font-size: 20px;
+	color: #e69900;
+	padding: 5px 20px;
+}
+
+.kg{
+	background-image: linear-gradient(to bottom, #00664e 45%, #ccfff3 20%);
+	margin-top: 40px;
+}
+
+.ounces{
+	background-image: linear-gradient(to bottom, #8080ff 45%, #e6e6ff 20%);
+}
+
+.grams{
+	background-image: linear-gradient(to bottom, #e69900 45%, #ffeecc 20%);
+}
+
