@@ -1,0 +1,171 @@
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url("guitar.jpg");
+  background-position: center;
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateY(-65%);
+    }
+    to   {
+      transform: translateY(0%);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to   {
+      opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+.logo {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 10px;
+  transition: 1s;
+}
+
+#logo:hover {
+  transform: rotate(360deg);
+}
+
+.author{
+  float: left;
+  margin-top: 25px;
+
+  color: white;
+  font-family: "Robot", sans-serif;
+  transition: 1s;
+  opacity: 0.2;
+}
+
+.author:hover{
+  transform: translateX(15%);
+  opacity: 1;
+}
+
+.navigation {
+  float: right;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.navigation li{
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  animation: slideLeft 1s;
+
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Robot", sans-serif;
+}
+
+.navigation a::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transition: 1s;
+  width: 0%;
+  margin-bottom: 3px;
+}
+
+.navigation a:hover::before {
+  width: 100%;
+}
+
+
+.siteTitle p{
+  text-align: center;
+  color: white;
+  clear: both;
+  font-family: "Robot", sans-serif;
+  padding-top: 100px;
+  font-size: 80px;
+  animation: slideIn 1s;
+}
+
+form.searchQuery {
+  margin-left: 40%;
+  margin-top: -65px;
+  animation: fadeIn 3s;
+}
+
+form.searchQuery input[type=button]{
+  float:none;
+  width: 100px;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  font-size: 17px;
+  border: 1px solid white;
+  border-left: none;
+  cursor: pointer;
+  background-image: url("logo.png");
+}
+
+form.searchQuery input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid white;
+  float: left;
+  width: 300px;
+  background: transparent;
+  color: white;
+}
+
+form.searchQuery input[type=button]:hover {
+  background: white;
+  color: black;
+}
+
+#theResult {
+  color:white;
+  text-align: center;
+  font-family: "Robot", sans-serif;
+  font-size: 10px;
+  animation: fadeIn 2s;
+}
+
+.chord{
+  margin: 10px;
+  height: 200px;
+  width: 250px;
+  float: left;
+  opacity: 0.4;
+}
+
+#chord{
+  background-color: white;
+  transition: 0.5s;
+  height: 200px;
+  width: 250px;
+  animation: fadeIn 2s;
+}
+
+.chord:hover {
+  opacity: 1;
+  cursor: pointer;
+}
