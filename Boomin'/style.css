@@ -1,0 +1,202 @@
+@keyframes slideIn {
+    from {
+      transform: translateY(-55%);
+    }
+    to   {
+      transform: translateY(0%);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to   {
+      opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.top{
+	text-align: center;
+	font-size: 30px;
+	font-family: "HelveticaNeue";
+	clear: both;
+	color: white;
+	animation: slideIn 1s;
+}
+
+.middle{
+	text-align: center;
+	font-size: 100px;
+	font-family: "HelveticaNeue";
+	margin-top: -20px;
+	color: white;
+	animation: fadeIn 2s;
+}
+
+.bottom{
+	text-align: center;
+	font-size: 16px;
+	font-family: "HelveticaNeue-Light";
+	margin-top: -5px;
+	padding-bottom: 30px;
+	color: white;
+	animation: slideLeft 1s;
+}
+
+.navigation {
+	float: right;
+	margin: 20px 50px 0px 0px;
+	color: white;
+}
+
+li{
+	display: inline-block;
+	font-style: none;
+	font-family: "HelveticaNeue-Light";
+	padding: 5px 10px 5px 10px;
+	animation: slideIn 1s;
+}
+
+.topSection {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) ,url("stack.jpg");
+    background-position: center;
+}
+
+.middleSection {
+	height: 650px;
+	background: #3d6b68;
+	text-align: center;
+}
+
+.lbl {
+	font-family: "HelveticaNeue-Light";
+	color: white;
+	padding-right: 10px;
+	padding-top: 20px;
+	font-size: 30px;
+}
+
+.logo {
+	border-width: 1px;
+	border: white;
+	border-style: solid;
+	margin: auto 0;
+}
+
+.iPhone{
+	float: left;
+}
+
+.description{
+	color: white;
+	text-align: left;
+	margin-top: 80px;
+	font-family: "HelveticaNeue";
+	font-size: 20px;
+	margin-right: 30px;
+}
+
+.description #para2{
+	color: #e6e6e6;
+	font-family: "HelveticaNeue-Light";
+	font-size: 17px;
+	position: relative;
+	top: 20px;
+}
+
+.description #para3{
+	color: #e6e6e6;
+	font-family: "HelveticaNeue-Light";
+	font-size: 17px;
+	position: relative;
+	top: 60px;
+
+}
+
+.action {
+	font-family: "HelveticaNeue-Light";
+	position: relative;
+	top: 150px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#track {
+	color: #f0b041;
+}
+
+.bottomSection{
+	background: #313131;
+	height: 650px;
+	text-align: center;
+}
+
+#features {
+	font-family: "HelveticaNeue-Light";
+	color: white;
+	padding-top: 30px;
+	font-size: 30px;
+}
+
+#logo {
+	margin-top: 5px;
+}
+
+.image1{
+	float: left;
+	width: 25%;
+	padding-top: 30px;
+}
+
+#botLabel, #shirtLabel, #accLabel, #shoeLabel {
+	color: white;
+	padding-top: 20px;
+	font-size: 22px;
+	font-family: "HelveticaNeue";
+	animation: slideIn 1s;
+}
+
+#botDescription, #accDescription, #shirtDescription, #shoesDescription{
+	color: white;
+	font-size: 15px;
+	font-family: "HelveticaNeue-Light";
+	margin: 20px 100px 0px 100px;
+}
+
+.bottomSection #downloadBtn{
+	margin: 0 auto;
+	color: #f0b041;
+	font-family: "HelveticaNeue-Light";
+	font-size: 25px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #f0b041;
+	width: 300px;
+	clear: both;
+	position: relative;
+	top: 100px;
+}
+
+
+
+
+
+
+
