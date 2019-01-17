@@ -1,0 +1,134 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "HelveticaNeue-Light";
+	background-color: #1e7b7b;
+}
+
+html {
+	background-image: url("pattern.png");
+	background-position: center;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+.date_container {
+	text-align: center; 
+	margin: 0px 25%;
+	font-size: 100px;
+	margin-top: 4%;
+	border: solid white 3px;
+	box-shadow: 0px 0px 50px 0px white;
+	animation: fadeIn 2s;
+}
+
+#the_label {
+	font-family: "HelveticaNeue";
+	color: white;
+}
+
+#date {
+	margin-top: 5px;
+	font-size: 35px;
+	color: white;
+}
+
+#time {
+	font-size: 20px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+.dateSince_container {
+	text-align: center;
+	margin-top: 45px;
+	animation: fadeIn 2s;
+}
+
+.dateSince_container p {
+	font-family: "HelveticaNeue";
+	color:  white;
+	font-size: 35px;
+	margin: 10px 0px;
+}
+
+#months, #day, #year {
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+}
+
+#user_month, #user_day, #user_year {
+	font-size: 25px;
+	color: white;
+	border: solid white 2px;
+	padding: 5px;
+	margin: 0px 5px;
+}
+
+#user_day, #user_year {
+	width: 100px;
+}
+
+::placeholder {
+	color: white;
+	opacity: 0.5;
+}
+
+#since_button {
+	font-family: "HelveticaNeue";
+	margin-top: 20px;
+	font-size: 20px;
+	padding: 10px;
+	color: white;
+	cursor: pointer;
+	border-radius: 20px;
+	border: solid white 2px;
+}
+
+#since_button:hover {
+	background-color: white;
+	color: #29a3a3;
+}
+
+#result_container {
+	visibility: hidden;
+	display: inline-block;
+	margin: 0px 5%;
+	width: 90%;
+	text-align: center;
+}
+
+#result {
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	display: inline-block;
+	padding: 5px;
+	margin: 30px 5%;
+	width: 250px;
+}
+
+#result:hover{
+	color: #ff9999;
+	cursor: pointer;
+}
+
+#result_label {
+	padding-top: 15px;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+}
+
+#month, #weeks, #days, #hours, #minutes {
+	font-size: 60px;
+	font-family: "HelveticaNeue";
+	text-align: center;
+}
