@@ -1,0 +1,138 @@
+@keyframes comeIn{
+    0%   {opacity: 0;}
+    25%  {opacity: .25;}
+    50%  {opacity: .5;}
+    75%  {opacity: .75;}
+    100% {opacity: 1;}
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "HelveticaNeue-Light"
+}
+
+html{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+}
+
+#container {
+    margin: 20px auto;
+    text-align: center;
+    padding: 0px;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 100px;
+}
+
+#location {
+    background-color: white;
+    border: none;
+    padding: 15px 30px;
+    color: grey;
+    font-size: 15px;
+    cursor: text;
+    border-radius: 50px;
+}
+
+#findData {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+    color: grey;
+    padding: 10px 15px;
+    margin-left: 5px;
+}
+
+#findData:hover {
+    background-color: orange;
+    cursor: pointer;
+    color: white;
+}
+
+#result{
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+    margin-left: 200px;
+    border-radius: 20px;
+    background-color: #D9D9D6;
+    box-shadow: 4px 4px 20px 4px black;
+    padding: 1px 0px;
+    width: 275px;
+    display: none;
+    animation: comeIn 1s;
+}
+
+.info{
+    font-family: 'Oswald', sans-serif;
+    color: #40403F;
+}
+
+#place{
+    font-size:55px;
+}
+
+#description {
+    padding-top: -5px;
+    font-size: 20px;
+}
+
+#temp{
+    font-size: 50px;
+}
+
+#pressure, #min, #max{
+    font-size: 20px;
+}
+
+#max{
+    margin-bottom: 10px;
+}
+
+
+#forecast {
+    text-align: center;
+    color: white;
+    height: 100px;
+    margin-top: 125px;
+    margin-left: 500px;
+    width: 1000px;    
+}
+
+#forecastSections{
+    margin: 40px 10px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: rgb(117, 117, 96);
+    display: inline-block;
+    box-shadow: 2px 2px 20px 1px black;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#forecastSections:hover{
+    transform: scale(1.15,1.15);
+}
+
+#label{
+    text-align: left;
+    font-size: 20px;
+    margin-top: -85px;
+}
+
+#date{
+    color: rgb(211, 211, 197);
+    font-size: 25px;
+}
+
+.forecastInfo{
+    color: white;
+    margin-bottom: -15px;
+}
+
