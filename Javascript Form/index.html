@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<form method="post" action="https://www.w3schools.com/action_page.php">
+<fieldset>
+<legend> Personal Information </legend>
+  <p>
+  <label> Name: </label>
+  <input type="text" placeholder="John Doe" name="name" id="nameText">
+  </p>
+
+  <p>
+  <label> Email: </label>
+  <input type="text" placeholder="johndoe@yahoo.com" name="email" id="emailText">
+  </p>
+
+  <p>
+  <label> Password: </label>
+  <input type="password" name="password" id="pwText">
+  </p>
+
+  <p>
+  <label> Enter your name again: </label>
+  <input type="text" placeholder="John Doe" name="nameAgain" id="nameAgainText">
+  </p>
+
+  <p>
+  <label> Enter your email again: </label>
+  <input type="text" placeholder="johndoe@yahoo.com" name="emailAgain" id="emailAgainText">
+  </p>
+
+  <p>
+  <label> Password: </label>
+  <input type="password" name="passwordAgain" id="pwAgainText">
+  </p>
+</fieldset>
+<br>
+<fieldset>
+  <legend> About you </legend>
+  <p> Choose your favorite color: </p>
+  <p>
+  <select id="color" name="favorite_color">
+    <option>N/a</option>
+    <option>Red</option>
+    <option>Black</option>
+    <option>Blue</option>
+    <option>Green</option>
+    <option>Pink</option>
+  </select>
+  </p>
+
+  <p> Choose your favorite animal: </p>
+  <p><input type="radio" name="favorite_animal" id="animal" value="elephant"> Elephant </input>
+  <input type="radio" name="favorite_animal" id="animal" value="tiger"> Tiger </input>
+  <input type="radio" name="favorite_animal" id="animal" value="husky"> Husky </input></p>
+
+  <p> Choose your favorite type of food: </p>
+  <p><input type="radio" name="favorite_meal" id="food" value="italian"> Italian </input>
+  <input type="radio" name="favorite_meal" id="food" value="american"> American </input>
+  <input type="radio" name="favorite_meal" id="food" value="thai"> Thai </input></p>
+
+  <textarea placeholder="Write about one of your hobbies" rows="4"cols="75" name="completedText" value="yes" id="hobbyText"></textarea>
+</fieldset>
+<br>
+<div id="selectionLabel"> Select all that apply: </div>
+
+<div>
+  <input type="checkbox" name="over18" id="overAge" value="yes">
+  <label> I am over 18 years old </label>
+</div>
+
+<div>
+  <input type="checkbox" name="readyBox" id="readyCheckbox" value="yes">
+  <label> I am ready to submit this form </label>
+</div>
+<div><input type="submit" value="Submit Form" id="submitBtn"></div>
+</form>
+<br>
+<div><button onclick="validate();"> Validate </button></div>
+<div><input type="button" onclick="checkSimilarity();" id="similarLabel"> Check Similarity </input></div>
+
+
+</body>
+</html>
